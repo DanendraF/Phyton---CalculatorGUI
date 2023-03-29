@@ -29,7 +29,7 @@ try :
             print ('')
             print ('|| Konvert ke :   ||')
             print ('|| 1. Biner       ||')
-            print ('|| 2. Okta        ||')
+            print ('|| 2. Oktal       ||')
             print ('|| 3. Hexadecimal ||')
             print ('')
             menu = int (input('Masukan pilihan : '))
@@ -94,10 +94,10 @@ try :
                 print ('')
                 
         elif masukan == 2:
-            print ('konvert ke')
-            print ('1. Desimal')
-            print ('2. Okta')
-            print ('3. Hexadecimal')
+            print ('|| konvert ke     ||')
+            print ('|| 1. Desimal     ||')
+            print ('|| 2. Oktal       ||')
+            print ('|| 3. Hexadecimal ||')
             menu = int (input('masukan pilihan :'))
             print ('')
 
@@ -163,11 +163,11 @@ try :
                 print ('')
 
         elif masukan == 3:
-            print ('konvert ke')
-            print ('1. Desimal')
-            print ('2. Biner')
-            print ('3. Hexadecimal')
-            menu = int (input('masukan pilihan :'))
+            print ('|| konvert ke     ||')
+            print ('|| 1. Desimal     ||')
+            print ('|| 2. Biner       ||')
+            print ('|| 3. Hexadecimal ||')
+            menu = int (input('masukan pilihan : '))
             print ('')
             
             while menu > 4 or menu < 0 :
@@ -234,10 +234,10 @@ try :
                 print ('')
                 
         elif masukan == 4:
-            print ('konvert ke')
-            print ('1. Desimal')
-            print ('2. Biner')
-            print ('3. Okta')
+            print ('|| konvert ke')
+            print ('|| 1. Desimal  ||')
+            print ('|| 2. Biner    ||')
+            print ('|| 3. Oktal    ||')
             menu = int (input('masukan pilihan :'))
             print ('')
 
@@ -269,54 +269,26 @@ try :
                 print ('')
 
             if menu == 2:
-                bin = input('Masukan bilangan biner :')
 
-                for i in range (len(bin)) :
-                    if bin[i] != 'a' or bin[i] != 'b' or bin[i] != 'c' or bin[i] != 'd' or bin[i] != 'e' or bin[i] != 'f' :
-                        a = False;
-                    else :
-                        a = True
+                hexa = input('masukkan hexa: ')
 
-                while a == False :
-                    for i in range (len(input )) :
-                        if input[i] != 'a' or input[i] != 'b' or input[i] != 'c' or input[i] != 'd' or input[i] != 'e' or input[i] != 'f' :
-                            a = False;
-                            break
-                        else :
-                            a = True
-                        
-                print ('')
-                for i in range (len(bin)):
-                    pembalik.insert(0, bin[i]) #membalikkan biner
-                for i in range (len(pembalik)):
-                    biner += int (pembalik[i])*(2**i)
-                
+                for digit in hexa:
+                    if digit not in '0123456789ABCDEFabcdef':
+                        print('Input tidak valid.')
+                        exit()
 
-                
-                for i in range (len(bin)):
-                    if bin[i] == 'A':
-                        hasil = 10
-                    if bin[i] == 'B':
-                        hasil = 11
-                    if bin[i] == 'C':
-                        hasil = 12
-                    if bin[i] == 'D':
-                        hasil = 13
-                    if bin[i] == 'E':
-                        hasil = 14
-                    if bin[i] == 'F':
-                        hasil = 15
-                    hexa += hasil*(16**i)
+                biner = ''
+                for digit in hexa:
+                    if digit in '0123456789':
+                        biner += bin(int(digit))[2:].zfill(4)
+                    else:
+                        if digit in 'ABCDEF':
+                            nilai = 10 + 'ABCDEF'.index(digit)
+                        else:
+                            nilai = 10 + 'abcdef'.index(digit)
+                        biner += bin(nilai)[2:]
 
-                while hexa != 0:
-                    hasil = hexa % 2
-                    cetak.insert(0, str(hasil))
-                    hexa = hexa//2
-                    if hexa == 0:
-                        for i in range (len(cetak)):
-                            tampil +=  cetak[i]
-                print ('hasilnya adalah : ',tampil)
-                print ('')
+                print('hasilnya adalah:', biner)
             
             if menu == 3:
                 bin = input('masukan hexa :')
@@ -345,7 +317,6 @@ try :
                             tampil +=  cetak[i]
                 print ('hasilnya adalah : ',tampil)
                 print ('')
-
             
         elif masukan == 5:
             string = input("Masukkan string yang ingin dikonversi ke ASCII: ")
