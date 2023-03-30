@@ -248,10 +248,11 @@ try :
                 print ('')
             
             
+            # HEXA - DESIMAL
             if menu == 1:
-                bin = input('masukan hexa :')
-                print ('')
-                for i in range (len(bin)):
+                bin = input('masukan hexadesimal :')
+                print('')
+                for i in range(len(bin)):
                     if bin[i] == 'A' or bin[i] == 'a':
                         hasil = 10
                     if bin[i] == 'B' or bin[i] == 'b':
@@ -265,8 +266,8 @@ try :
                     if bin[i] == 'F' or bin[i] == 'f':
                         hasil = 15
                     hexa += hasil*(16**i)
-                print('hasilnya adalah : ',hexa)
-                print ('')
+                print('Hasilnya Adalah : ', hexa)
+                print('')
 
             if menu == 2:
 
@@ -290,10 +291,11 @@ try :
 
                 print('hasilnya adalah:', biner)
             
+
             if menu == 3:
-                bin = input('masukan hexa :')
-                print ('')
-                for i in range (len(bin)):
+                bin = input('masukan hexadesimal :')
+                print('')
+                for i in range(len(bin)):
                     if bin[i] == 'A':
                         hasil = 10
                     if bin[i] == 'B':
@@ -311,12 +313,12 @@ try :
                 while hexa != 0:
                     hasil = hexa % 8
                     cetak.insert(0, str(hasil))
-                    hexa = hexa//8
+                    hexa = hexa//84
                     if hexa == 0:
-                        for i in range (len(cetak)):
-                            tampil +=  cetak[i]
-                print ('hasilnya adalah : ',tampil)
-                print ('')
+                        for i in range(len(cetak)):
+                            tampil += cetak[i]
+                print('hasilnya adalah : ', tampil)
+                print('')
             
         elif masukan == 5:
             string = input("Masukkan string yang ingin dikonversi ke ASCII: ")
