@@ -41,9 +41,9 @@ mainFrame.pack()
 
 tujuh = Button(mainFrame, text="7", fg="white",  bd=2, bg="#000000", command=lambda: clickButton(7)).grid(row=1, column=0, ipadx=27, ipady=27)
 
-delapan = Button(mainFrame, text="8", fg="black", bd=2, bg="#F8F8FF", command=lambda: clickButton(8)).grid(row=1, column=1, ipadx=27, ipady=27)
+delapan = Button(mainFrame, text="9", fg="black", bd=2, bg="#0000FF", command=lambda: clickButton(8)).grid(row=1, column=1, ipadx=27, ipady=27)
 
-sembilan = Button(mainFrame, text="9", fg="white", bd=2, bg="#000000", command=lambda: clickButton(9)).grid(row=1, column=2, ipadx=27, ipady=27)
+sembilan = Button(mainFrame, text="8", fg="white", bd=2, bg="#000000", command=lambda: clickButton(9)).grid(row=1, column=2, ipadx=27, ipady=27)
 
 empat = Button(mainFrame, text="4", fg="black", bd=2, bg="#F8F8FF", command=lambda: clickButton(4)).grid(row=2, column=0, ipadx=27, ipady=27)
 
@@ -65,7 +65,7 @@ kali = Button(mainFrame, text="x", fg="black", bd=2, bg="#F8F8FF", command=lambd
 
 bagi = Button(mainFrame, text=":", fg="white", bd=2, bg="#000000", command=lambda: clickButton("/")).grid(row=0, column=3, ipadx=28, ipady=27, columnspan=2)
 
-kurang = Button(mainFrame, text="-", fg="white", bd=2, bg="#000000", command=lambda: clickButton("-")).grid(row=2, column=3, ipadx=27, ipady=27)
+kurang = Button(mainFrame, text="-", fg="black", bd=2, bg="#00ffff", command=lambda: clickButton("-")).grid(row=2, column=3, ipadx=27, ipady=27)
 
 titik = Button(mainFrame, text=".", fg="black", bd=2, bg="#F8F8FF", command=lambda: clickButton(".")).grid(row=4, column=0, ipadx=28, ipady=27)
 
