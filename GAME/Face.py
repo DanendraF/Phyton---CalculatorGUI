@@ -112,4 +112,4 @@ root.after(1000, blink)
 root.after(5000, sad)
 root.mainloop()
 
-#Coded with 💙 by Mr. Unity Buddy
+#DANENDNDN#
