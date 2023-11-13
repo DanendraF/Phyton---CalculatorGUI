@@ -2,7 +2,7 @@
 #NIM, Tgl, Bulan
 x = 23523170
 y = 19
-z = 05
+z = 5
 
 def tambah(a, b):
     return a + b
