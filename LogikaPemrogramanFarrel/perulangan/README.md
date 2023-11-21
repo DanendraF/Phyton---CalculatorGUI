@@ -7,7 +7,7 @@
         Contoh Penulisan FOR -> 
                             for variable in class 
 
-        -> conton ada di file for.py
+        -> conton ada di file LogikaPemrograman/perulangan/for.py
 
 #====================================================================================================================================================================================#
 
@@ -20,7 +20,7 @@
 
                                     else: 
 
-        -> Contoh di file forelse.py
+        -> Contoh di file LogikaPemrograman/perulangan/forelse.py
 
 #====================================================================================================================================================================================#
 
@@ -28,7 +28,7 @@
 
 🔑 -> berhenti
 
-        -> Penulisan break -> ada di file break.py
+        -> Penulisan break -> ada di file LogikaPemrograman/perulangan/break.py
 
 #====================================================================================================================================================================================#
 
@@ -40,7 +40,7 @@
                         for variabel in class():
                             for variable in class():
 
-        -> Contoh di file perulanganbersarang.py
+        -> Contoh di file LogikaPemrograman/perulangan/perulanganbersarang.py
 
 #====================================================================================================================================================================================#
 
@@ -48,7 +48,7 @@
 
  🔑 -> benar = lanjut
 
-        -> Penulisan break -> ada di file while.py
+        -> Penulisan break -> ada di file LogikaPemrograman/perulangan/while.py
 
 #====================================================================================================================================================================================#
 
@@ -63,13 +63,13 @@ print(list(range(0, 25, 4))) -> menampilkan kelipatan 4 dari 0 - 25 [0, 4, 8, 12
 
 #====================================================================================================================================================================================#
 
-file example1.py
+file LogikaPemrograman/2/example1.py
 
 Maksud dari print(I, end='') adalah menampilkan nilai i yang sudah terdapat perintah di baris sebelumnya dimana akan menampilkan output sesuai range nya dan kursor tidak akan pindah baris sebelum selesai mengeksekusi. Jadi misal 1 maka baris pertama muncul hanya ada angka 1, lalu 2 maka baris kedua muncul 2 2, baris 3 maka 3 3 3 dst sampai syntax perintah terpenuhi
 
 #====================================================================================================================================================================================#
 
-file listku3.py
+file LogikaPemrograman/2/listku3.py
 
 kalo di run error karena di baris 25 kita telah menghapus semua data list namun memanggilnya lagi di baris 26. karena itu tidak ada data yang dipanggil makanya error. jika ingin bisa menghapus perintah print di baris 26 atau menambahkan syntax else
 
