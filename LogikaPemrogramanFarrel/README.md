@@ -1,0 +1,8 @@
+#-------------------------------#
+
+NGAPAIN KAK BUKA BUKA
+
+BUDAYAKAN MEMBACA DENGAN TELITI YA KAKA KAKA
+
+#----MERCI----#
+
