@@ -15,3 +15,5 @@ t.forward(100)
 
 # hentikan layar
 turtle.mainloop()  
+
+
